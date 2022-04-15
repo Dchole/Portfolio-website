@@ -1,3 +1,117 @@
-body{
-    background-color: #111;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}body{
+    background-color: #E5E5E5;
 }
+.body-container{
+     width: 80%;
+     margin: auto;
+ }
+ #button{
+    border:none;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 5px 15px;
+    margin-left: 2.7em;
+}
+h1,h2,h3{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.body-copy{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+h1{
+    font-size: 3.5em;
+    font-weight: 900;
+}
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 3em;
+    margin-bottom: 0.8em;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.highlight{
+    color: #2DA44E;
+}
+.shadecolor{
+    color: #545454;
+}
+
+/* Navigation style begin here */
+
+ #header{
+     background-color: #24292F;
+     font-family: 'Inter', sans-serif;
+     font-weight: 300;
+     padding: 20px 0;
+ }
+ .nav-flex{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .nav-link{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .nav-link ul{
+     list-style: none;
+ }
+ .nav-link ul li{
+    display: inline;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 1.8em;
+ }
+ .nav-link li:nth-child(3){
+    font-weight: 700;
+ }
+
+/* Navigation style end here */
+
+
+/* Introduction style begin here */
+
+.introduction{
+    margin-top: 4em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+.introduction p {
+    margin-top: 1.3em;
+}
+
+/* Introduction section style end here */
+
+
+/* About section style begin here */
+.about-copy-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.about-copy{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.26em;
+    line-height: 1.3;
+    padding-bottom: 10px;
+    font-weight: 500;
+    padding-right: 30px;
+}
+.image-container img{
+    padding-top: 8px;
+    height: 22em;
+}
+
+/* About section style end here */
