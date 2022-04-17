@@ -2,19 +2,33 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}body{
+}
+body{
     background-color: #E5E5E5;
 }
 .body-container{
      width: 80%;
      margin: auto;
  }
- #button{
+ #firstButton{
     border:none;
     font-size: 1.5em;
     font-weight: 700;
     padding: 5px 15px;
     margin-left: 2.7em;
+}
+.secondButton{
+    background-color: #2DA44E;
+    color: #fff;
+    border:none;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 5px 15px;
+}
+.centerButton{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 h1,h2,h3{
     font-family: 'Inter', sans-serif;
@@ -32,12 +46,13 @@ h1{
 h2{
     font-family: 'Inter', sans-serif;
     font-size: 3em;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.5em;
 }
 h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1.2em;
+    padding-bottom: 1em;
 }
 
 .highlight{
@@ -45,6 +60,21 @@ h3{
 }
 .shadecolor{
     color: #545454;
+}
+/* Global style */
+.introduction-section, .about-section, .experience-section, .skills-section, .contact-section{
+    margin-bottom: 6em;
+}
+blockquote{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+blockquote > span{
+    font-weight: 600;
 }
 
 /* Navigation style begin here */
@@ -83,19 +113,17 @@ h3{
 
 /* Introduction style begin here */
 
-.introduction{
-    margin-top: 4em;
-    margin-bottom: 6em;
+.introduction-section{
+    margin-top: 5em;
     text-align: center;
 }
-.introduction p {
-    margin-top: 1.3em;
+.important{
+    padding: 1em 0 2em 0;
 }
-
 /* Introduction section style end here */
 
-
 /* About section style begin here */
+
 .about-copy-container{
     display: flex;
     align-items: start;
@@ -115,3 +143,65 @@ h3{
 }
 
 /* About section style end here */
+
+/* Project section style start here */
+
+/* Project section style end here */
+
+/* Experience section style start here */
+
+.experience-card{
+    border: 1px solid #9b9b9b;
+    box-shadow: 8px 8px 0px #545454;
+    width: 75%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+}
+.achievement > ul {
+    margin-left: 1.8em;
+}
+.achievement > ul > li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.84em;
+    font-weight: 500;
+    padding: 3px 0;
+}
+.job-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+.company-date{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3px 0;
+}
+.company{
+    font-weight: 700;
+    color: #545454;
+}
+.date{
+    font-size: 0.8em;
+    padding-left: 6px;
+}
+
+.contact-copy{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 6em 1em 6em;
+}
+footer{
+    background-color: #24292F;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 20px 0;
+
+    text-align: center;
+}
