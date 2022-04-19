@@ -71,7 +71,8 @@ button{
 }
 #firstButton:hover{
     box-shadow: 4px 4px 0px #545454;
-    transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transform: scale(1.05);  
 }
 .secondButton{
     background-color: #2DA44E;
@@ -79,6 +80,7 @@ button{
 .secondButton:hover{
     box-shadow: 4px 4px 0px #04ba65;
     transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transform: scale(1.05);
 }
 .centerButton{
     display: flex;
@@ -202,7 +204,8 @@ button{
 }
 .experience-card:hover, .image-container img:hover{
     box-shadow: none;
-    transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
+    transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transform: scale(1.05);
 }
 .achievement > ul {
     margin-left: 1.8em;
@@ -244,7 +247,7 @@ button{
 .skill-sets img:hover{
     position: relative;
     transform: translate(0px, 2px);
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: all 0.27s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .skill-sets{
     display: flex;
