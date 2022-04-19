@@ -31,20 +31,19 @@
                     <nav>
                         <div class="nav-link">
                             <ul>
-                                <li>About</li>
-                                <li>Project</li>
-                                <li>Me.</li>
-                                <li>Skills</li>
-                                <li>Experience</li>
+                                <li><a href="#about-section">About</a></li>
+                                <li><a href="#">Project</a></li>
+                                <li><a href="#">Me.</a></li>
+                                <li><a href="#skills-section">Skills</a></li>
+                                <li><a href="#experience-section">Experience</a></li>
                             </ul>
-                            <!-- <button id="firstButton">Resume</button> -->
                         </div>
                     </nav>
                 </div>
             </div>
         </header>
 
-        <section class="introduction-section">
+        <section id="Hero-section">
             <div class="body-container">
                 <h3>Hello, my name is</h3>
                 <div class="important">
@@ -58,9 +57,14 @@
                     <span class="highlight">human-centered</span> products.
                 </p>
             </div>
+            <div class="centerButton">
+                <button id="firstButton">
+                    <a href="#">Resume</a>
+                </button>
+            </div>
         </section>
 
-        <section class="about-section">
+        <section id="about-section">
             <div class="body-container">
                 <h2>About</h2>
                 <div class="about-copy-container">
@@ -108,14 +112,14 @@
             </div>
         </section> -->
 
-        <section class="experience-section">
+        <section id="experience-section">
             <h2>Experience</h2>
             <div class="body-container">
                 <blockquote>“Experience is not what happens to you; it's what you do with what happens
                     to you.” - <span>Aldous Huxley</span></blockquote>
                 <section class="experience-card">
                     <p class="job-title">Software Engineer</p>
-                    <div class="company-date">
+                    <div class="timeline">
                         <p class="company">Google</p>
                         <p class="date">2022 - 2025</p>
                     </div>
@@ -130,7 +134,7 @@
 
                 <section class="experience-card">
                     <p class="job-title">Frontend Developer</p>
-                    <div class="company-date">
+                    <div class="timeline">
                         <p class="company">Spotify</p>
                         <p class="date">2022 - 2025</p>
                     </div>
@@ -146,7 +150,7 @@
 
                 <section class="experience-card">
                     <p class="job-title">Web Developer</p>
-                    <div class="company-date">
+                    <div class="timeline">
                         <p class="company">Amazon</p>
                         <p class="date">2022 - 2025</p>
                     </div>
@@ -161,15 +165,24 @@
             </div>
         </section>
 
-        <section class="skills-section">
+        <section id="skills-section">
             <h2>Skills</h2>
             <div class="body-container">
                 <blockquote>“The future belongs to those who learn more skills and combine them in
-                    creative ways.” - <span>Robert Greene</span></blockquote>
+                    creative ways.” - <span>Robert Greene</span>
+                </blockquote>
+                <div class="skill-sets">
+                    <img src="/src/Assets/SVG/HTML.svg" alt="">
+                    <img src="/src/Assets/SVG/CSS.svg" alt="">
+                    <img src="/src/Assets/SVG/Javascript.svg" alt="">
+                    <img src="/src/Assets/SVG/Git.svg" alt="">
+                    <img src="/src/Assets/SVG/vscode.svg" alt="">
+                    <img src="/src/Assets/SVG/Figma.svg" alt="">
+                </div>
             </div>
         </section>
 
-        <section class="contact-section">
+        <section id="contact-section">
             <h3>What's Next?</h3>
             <h2>Get In Touch</h2>
             <div class="body-container">
@@ -181,14 +194,14 @@
             </div>
             <div class="centerButton">
                 <button class="secondButton">
-                    Say Hello
+                    <a href="mailto:nanaasamaohkwaw963@gmail.com">Say Hello</a>
                 </button>
             </div>
         </section>
 
         <footer>
             <p>Designed and Built by</p>
-            <p>Nakam360</p>
+            <div class="author"><a href="www.github.com/nakamcode" target="_blank"><div class="author"><p>Nakamcode</p><img src="/src/Assets/SVG/Github.svg" alt=""></div></a></div>
         </footer>
     </main>
 </body>
