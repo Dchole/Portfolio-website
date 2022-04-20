@@ -18,7 +18,8 @@
 	<meta name="description" content="I’m a Frontend Developer specializing in building and occasionally designing exceptional digital experiences." />
 	<meta name="keywords" content="Nana Asamoah Kwaw,nakam360, Web Development, Frontend, Frontend Developer, Software engineer" />
 
-    <link rel="stylesheet" href="../src/Assets/Styles/Style.css">
+    <link rel="stylesheet" href="../src/Assets/Styles/Style.css"> <!--CSS linking-->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script> <!--jquery linking for smooth animation-->
 
     <title>Nana Asamoah | Frontend Developer</title>
 </head>
@@ -31,11 +32,11 @@
                     <nav>
                         <div class="nav-link">
                             <ul>
-                                <li><a href="#about-section">About</a></li>
-                                <li><a href="#project-section">Project</a></li>
+                                <li><a href="#about-section" class="scrollLink">About</a></li>
+                                <li><a href="#project-section" class="scrollLink">Project</a></li>
                                 <li><a href="#">Me.</a></li>
-                                <li><a href="#skills-section">Skills</a></li>
-                                <li><a href="#experience-section">Experience</a></li>
+                                <li><a href="#skills-section" class="scrollLink">Skills</a></li>
+                                <li><a href="#experience-section" class="scrollLink">Experience</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -269,5 +270,18 @@
             <div class="author"><a href="https://github.com/Nakamcode" target="_blank"><div class="author"><p>Nakamcode</p><img src="/src/Assets/SVG/Github.svg" alt=""></div></a></div>
         </footer>
     </main>
+
+    <!-- This snippet below add animation to the anchor tag when click -->
+    <script>
+        $(document).ready(function() {
+            $("a.scrollLink").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                  }, 600);
+              });
+          });
+      </script>
+
 </body>
 </html>
