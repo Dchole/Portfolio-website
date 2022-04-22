@@ -290,13 +290,22 @@ svg{
     font-family: 'Montserrat', sans-serif;
     padding: 3px 0;
 }
-.company{
-    font-weight: 700;
+/* .company{
+    
     color: #545454;
-}
+} */
 .date{
     font-size: 0.8em;
     padding-left: 6px;
+}
+.company-link{
+    font-weight: 700;
+    text-decoration: none;
+    color: #545454;
+}
+.company-link:hover{
+    text-decoration: underline;
+    transition: all 0.4s;
 }
 
 /* Experience section style end here */
