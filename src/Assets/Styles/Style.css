@@ -390,6 +390,9 @@ footer{
     .body-container{
         width: 95%;
     }
+    blockquote{
+        font-size: 1em;
+    }
     .experience-card{
         padding: 1em;
     }
