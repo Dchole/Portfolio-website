@@ -69,7 +69,8 @@ button{
     width: 80%;
     margin: auto;
 }
- #firstButton{
+#firstButton{
+    position: relative;
     background-color: #0070f3;
 }
 .secondButton{
@@ -177,7 +178,6 @@ button{
     border: 0.07em solid #9b9b9b;
     margin-top: 0.5em;
     height: 23em;
-
 }
 
 /* About section style end here */
@@ -314,6 +314,7 @@ svg{
 /* Skills section style start here */
 
 .skill-sets img{
+    position: relative;
     margin: 0.5em;
 }
 .skill-sets img:hover{
@@ -328,7 +329,13 @@ svg{
     justify-content: center;
     margin-top: 3em;
 }
-
+.HTML5{
+    position: relative;
+}
+.HTML5::before{
+    content: "cardcard";
+    color: #000;
+}
 /* Skills section style end here */
 
 
@@ -393,7 +400,18 @@ footer{
         padding: 0;
     }
     #about-section{
-        display: none;
+    
+    }
+    .about-copy-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1em;
+    }
+    .image-container img{
+        width: 80vw;
+        height: 24em;
     }
 }
 
