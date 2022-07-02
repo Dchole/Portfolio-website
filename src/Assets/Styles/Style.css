@@ -411,7 +411,7 @@ footer{
     }
     .image-container img{
         width: 80vw;
-        height: 24em;
+        height: 100%;
     }
 }
 
