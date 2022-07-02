@@ -184,18 +184,18 @@ button{
 
 
 /* Project section style start here */
-    
+
+.center-productcard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card-wrapper{
     margin-top: 3em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 2.5em;
-    justify-content: center;
-}
-.center-productcard{
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 .project-card{
@@ -412,6 +412,9 @@ footer{
     }
     .body-copy{
         font-size: 1.3em;
+    }
+    .about-copy{
+        font-size: 1.2em;
     }
     .nav-flex{
         display: none;
