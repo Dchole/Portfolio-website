@@ -59,9 +59,9 @@ button{
     border:none;
     font-size: 1.5em;
     font-weight: 700;
-    padding: 5px 15px;
+    padding: 0.3em 0.94em;
     cursor: pointer;
-    box-shadow: 4px 4px 0px #545454;
+    box-shadow: 0.25em 0.25em 0 #545454;
     transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     transform: scale(1.05);      
  }
@@ -114,7 +114,7 @@ button{
      background-color: #24292F;
      font-family: 'Inter', sans-serif;
      font-weight: 300;
-     padding: 20px 0;
+     padding: 1.25em 0;
  }
  .nav-flex{
      display: flex;
@@ -132,7 +132,7 @@ button{
  .nav-link ul li{
     display: inline;
     color: #fff;
-    padding: 0 15px;
+    padding: 0 0.94em;
     font-size: 1.8em;
  }
  .nav-link a{
@@ -153,9 +153,7 @@ button{
     text-align: center;
 }
 .important{
-    /* padding: 0.8em 0 1.8em 0; */
     padding: 0.8em 0;
-    /* line-height: 0.8; */
 }
 /* Hero section style end here */
 
@@ -165,20 +163,19 @@ button{
 .about-copy-container{
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    gap: 3em;
 }
 .about-copy{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.26em;
     line-height: 1.3;
-    padding-bottom: 10px;
+    padding-bottom: 0.63em;
     font-weight: 500;
-    padding-right: 30px;
 }
 .image-container img{
-    box-shadow: 8px 8px 0px #545454;
-    border: 1px solid #9b9b9b;
-    margin-top: 8px;
+    box-shadow: 0.5em 0.5em 0 #545454;
+    border: 0.07em solid #9b9b9b;
+    margin-top: 0.5em;
     height: 23em;
 
 }
@@ -193,20 +190,25 @@ button{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    gap: 2.5em;
+    justify-content: center;
+}
+.center-productcard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .project-card{
     background-color: #fff;
-    border: 1px solid #9b9b9b;
-    width: 310px;
+    border: 0.07em solid #9b9b9b;
+    width: 19em;
     overflow: hidden;
     position: relative;
-    margin-bottom: 3em;
 }
 .project-card:hover{
     transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     transform: scale(1.05);
-    box-shadow: 0px 2px 40px #c1c1c1;
+    box-shadow: 0 0.13em 2.5em #c1c1c1;
 }
 .banner{
     overflow: hidden;
@@ -252,14 +254,18 @@ svg{
 
 /* Experience section style start here */
 
+.center-experience-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .experience-card{
     background-color: #fff;
-    border: 1px solid #9b9b9b;
-    box-shadow: 8px 8px 0px #545454;
-    width: 75%;
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    border: 0.07em solid #9b9b9b;
+    box-shadow: 0.5em 0.5em 0 #545454;
+    width: 80%;
+    margin-top: 3em;
     padding: 2em;
 }
 .experience-card:hover, .image-container img:hover{
@@ -274,7 +280,7 @@ svg{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.84em;
     font-weight: 500;
-    padding: 3px 0;
+    padding: 0.2em 0;
 }
 .job-title{
     font-family: 'Inter', sans-serif;
@@ -286,15 +292,11 @@ svg{
     align-items: center;
     justify-content: start;
     font-family: 'Montserrat', sans-serif;
-    padding: 3px 0;
+    padding: 0.2em 0;
 }
-/* .company{
-    
-    color: #545454;
-} */
 .date{
     font-size: 0.8em;
-    padding-left: 6px;
+    padding-left: 0.38em;
 }
 .company-link{
     font-weight: 700;
@@ -312,17 +314,17 @@ svg{
 /* Skills section style start here */
 
 .skill-sets img{
-    margin: 0 10px;
+    margin: 0.5em;
 }
 .skill-sets img:hover{
     position: relative;
-    /* transform: translate(0px, 2px); */
     transform: scale(1.08);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .skill-sets{
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 3em;
 }
@@ -337,7 +339,7 @@ svg{
     font-size: 1.4em;
     text-align: center;
     font-weight: 500;
-    padding: 0 6em 1em 6em;
+    padding-bottom: 1em;
 }
 
 /* Contact section style end here */
@@ -350,7 +352,7 @@ footer{
     background-color: #24292F;
     text-align: center;
     color: #fff;
-    padding: 20px 0;
+    padding: 1.25em 0;
 }
 .author{
     display: flex;
@@ -362,3 +364,57 @@ footer{
 }
 
 /* Footer section style end here */
+
+
+
+
+/* Media queries start here */
+
+
+/* Mobile=screen style start here */
+
+@media only screen and (max-width: 600px){
+    body{
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .body-container{
+        width: 95%;
+    }
+    .experience-card{
+        padding: 1em;
+    }
+    .timeline{
+        display: block;
+    }
+    .date{
+        padding: 0;
+    }
+    #about-section{
+        display: none;
+    }
+}
+
+/* Mobile-screen style end here */
+
+/* Tablet-screen style start here */
+
+@media only screen and (max-width: 786px){
+    
+}
+
+/* Tablet-screen style end here */
+
+/* Large-screen style start here */
+
+@media only screen and (max-width: 1200px){
+    
+}
+
+/* Large-screen style end here */
+
+
+
+/* Media queries end here */
