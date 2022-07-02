@@ -399,9 +399,6 @@ footer{
     .date{
         padding: 0;
     }
-    #about-section{
-    
-    }
     .about-copy-container{
         display: flex;
         flex-direction: column;
@@ -412,6 +409,12 @@ footer{
     .image-container img{
         width: 80vw;
         height: 100%;
+    }
+    .body-copy{
+        font-size: 1.3em;
+    }
+    .nav-flex{
+        display: none;
     }
 }
 
