@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="../src/Assets/Styles/Style.css"> <!--CSS linking-->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script> <!--jquery linking for smooth animation-->
+    <script src="../src/Assets/Js/scripts.js"></script> <!--Javascript Linking-->
 
     <title>Nana Asamoah | Frontend Developer</title>
 </head>
@@ -273,18 +274,5 @@
             <div class="author"><a href="https://github.com/Nakamcode" target="_blank"><div class="author"><p>Nakamcode</p><img src="/src/Assets/SVG/Github.svg" alt=""></div></a></div>
         </footer>
     </main>
-
-    <!-- This snippet below add animation to the anchor tag when click -->
-    <script>
-        $(document).ready(function() {
-            $("a.scrollLink").click(function(event) {
-                event.preventDefault();
-                $("html, body").animate({
-                    scrollTop: $($(this).attr("href")).offset().top
-                  }, 600);
-              });
-          });
-      </script>
-
 </body>
 </html>
