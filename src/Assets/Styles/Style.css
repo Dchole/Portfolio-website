@@ -422,6 +422,9 @@ footer .author img{
 /* Tablet-screen style start here */
 
 @media only screen and (max-width: 786px){
+    body{
+        width: 100%;
+    }
     .about-copy-container{
         display: flex;
         flex-direction: column;
@@ -441,6 +444,9 @@ footer .author img{
 /* Tablet-screen style end here */
 
 @media only screen and (max-width: 992px) {
+    body{
+        width: 100%;
+    }
     .about-copy-container{
         display: flex;
         flex-direction: column;
@@ -460,7 +466,9 @@ footer .author img{
 /* Large-screen style start here */
 
 @media only screen and (max-width: 1200px){
-    
+    body{
+        width: 100%;
+    }
 }
 
 /* Large-screen style end here */
