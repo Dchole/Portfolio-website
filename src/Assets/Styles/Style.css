@@ -68,6 +68,7 @@ button{
  .body-container{
     width: 80%;
     margin: auto;
+    max-width: 1200px; /* same as on line 158, 169, 277 and 350*/
 }
 #firstButton{
     position: relative;
