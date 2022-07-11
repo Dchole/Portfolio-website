@@ -153,6 +153,9 @@ button{
     margin-top: 3em;
     text-align: center;
 }
+.hero-copy{
+    max-width: 1200px;
+}
 .important{
     padding: 0.8em 0;
 }
@@ -162,8 +165,10 @@ button{
 /* About section style begin here */
 
 .about-copy-container{
+    max-width: 1200px;
     display: flex;
     align-items: start;
+    justify-items: center;
     gap: 3em;
 }
 .about-copy{
@@ -185,7 +190,7 @@ button{
 
 /* Project section style start here */
 
-.center-product-cards{
+.center-div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,6 +272,7 @@ svg{
     width: 80%;
     margin-top: 3em;
     padding: 2em;
+    max-width: 1200px;
 }
 .experience-card:hover, .image-container img:hover{
     box-shadow: none;
@@ -340,6 +346,7 @@ svg{
     text-align: center;
     font-weight: 500;
     padding-bottom: 1em;
+    max-width: 1200px;
 }
 
 /* Contact section style end here */
@@ -460,6 +467,7 @@ footer .author img{
     .image-container img{
         width: 100%;
         height: 100%;
+        border-radius: 50%;
     }
 }
 
