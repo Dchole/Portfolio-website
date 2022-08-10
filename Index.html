@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="../src/Assets/Styles/Style.css"> <!--CSS linking-->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script> <!--jquery linking for smooth animation-->
-    <script src="../src/Assets/Js/scripts.js"></script> <!--Javascript Linking-->
+    
 
     <title>Nana Asamoah | Frontend Developer</title>
 </head>
@@ -29,9 +29,13 @@
      
         <header id="header">
             <div class="body-container">
+                <div id="hamburger" onclick="hamb()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
                 <div class="nav-flex">
-                    <nav>
-                        <div class="nav-link">
+                        <nav class="nav-link">
                             <ul>
                                 <li><a href="#about-section" class="scrollLink">About</a></li>
                                 <li><a href="#project-section" class="scrollLink">Project</a></li>
@@ -39,9 +43,9 @@
                                 <li><a href="#skills-section" class="scrollLink">Skills</a></li>
                                 <li><a href="#experience-section" class="scrollLink">Experience</a></li>
                             </ul>
-                        </div>
-                    </nav>
+                        </nav>
                 </div>
+                
             </div>
         </header>
 
@@ -266,7 +270,7 @@
             <div class="body-container">
                 <div class="center-div">
                 <p class="contact-copy">
-                    I’m currently looking for any new opportunities , my inbox is always open. Whether you have a question or just want to say hi,
+                    I’m currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi,
                     I’ll try my best to get back to you!
                 </p>
                 </div>
@@ -283,5 +287,6 @@
             <div class="author"><a href="https://github.com/Nakamcode" target="_blank"><div class="author"><p>Nakamcode</p><img src="/src/Assets/SVG/Github.svg" alt=""></div></a></div>
         </footer>
     </main>
+    <script src="../src/Assets/Js/scripts.js"></script> <!--Javascript Linking-->
 </body>
 </html>
