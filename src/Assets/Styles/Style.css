@@ -113,10 +113,19 @@ button{
 /* Navigation style begin here */
 
  #header{
-     background-color: #24292F;
-     font-family: 'Inter', sans-serif;
-     font-weight: 300;
-     padding: 1.25em 0;
+    background-color: #24292F;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 1em 0;
+ }
+ #hamburger{
+    display: none;
+ }
+ .line{
+    background-color: #fff;
+    width: 39px;
+    height: 4px;
+    border-radius: 5px;
  }
  .nav-flex{
      display: flex;
@@ -124,17 +133,18 @@ button{
      justify-content: center;
  }
  .nav-link{
-     display: flex;
-     align-items: center;
-     justify-content: center;
+     display: ;
  }
- .nav-link ul{
-     list-style: none;
+ .show_nav{
+    padding: 30em;
  }
- .nav-link ul li{
-    display: inline;
-    color: #fff;
-    padding: 0 0.94em;
+ .nav-link ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+    flex-wrap: wrap;
     font-size: 1.8em;
  }
  .nav-link a{
@@ -394,8 +404,35 @@ footer .author img{
     blockquote{
         font-size: 1em;
     }
-    .nav-flex{
+    #hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        /* margin-bottom: 2em; */
+    }
+    .nav-link{
         display: none;
+    }
+    #header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        /* background-color: red; */
+    }
+    .nav-flex{
+        /* background-color: green; */
+        display: block;
+    }
+    .nav-link ul{
+        display: block;
+        font-size: 1.5em;
+    }
+    .nav-link ul li{
+        padding-bottom: 15px;
+    }
+    #Hero-section{
+        margin-top: 5.5em;
     }
     .body-copy{
         font-size: 1.3em;

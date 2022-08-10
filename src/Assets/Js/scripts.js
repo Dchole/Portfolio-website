@@ -8,5 +8,19 @@ $(document).ready(function() {
             }, 600);
     });
 });
-          
-let underscript = "I will be a fullstack developer before the year ends";
+
+
+
+function hamb() {
+    
+    const hamburger = document.querySelector('#hamburger');
+    const navlinks = document.querySelector('.nav-link');
+    navlinks.style.display="none";
+}
+
+// var hamb = document.querySelector('#hamburger');
+// var navlinks = document.querySelector('.nav-link');
+
+// navToggle.addEventListener('click', function(){
+//     navlinks.classList.toggle("show_nav");
+// })
