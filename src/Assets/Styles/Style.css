@@ -315,10 +315,13 @@ svg{
     font-size: 0.8em;
     padding-left: 0.38em;
 }
+.date span{
+    color: rgb(119, 119, 119);
+}
 .company-link{
     font-weight: 700;
     text-decoration: none;
-    color: #545454;
+    color: #636363;
 }
 .company-link:hover{
     text-decoration: underline;
