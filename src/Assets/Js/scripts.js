@@ -1,8 +1,14 @@
+function close() {
+    navFlex.style.height = "0";
+    navFlex.hidden = true;
+}
+
+
 //This snippet below add animation to the anchor tag when click
-    
 $(document).ready(function() {
     $("a.scrollLink").click(function(event) {
         event.preventDefault();
+        close();
             $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 600);
@@ -24,8 +30,7 @@ hamburger?.addEventListener("click", () => {
         navFlex.hidden = false;
         navFlex.style.height = "250px";
     } else {
-        navFlex.style.height = "0";
-        navFlex.hidden = true;
+        close()
     }
 
     mobileNavState.hidden = navFlex?.hidden
