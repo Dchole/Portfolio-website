@@ -414,7 +414,7 @@ footer .author img{
         /* margin-bottom: 2em; */
     }
     .nav-link{
-        display: none;
+        /* display: none; */
     }
     #header{
         position: fixed;
@@ -425,7 +425,11 @@ footer .author img{
     }
     .nav-flex{
         /* background-color: green; */
-        display: block;
+        /* display: block; */
+        height: 0;
+        justify-content: flex-start;
+        overflow-y: hidden;
+        transition: height 250ms ease-in-out;
     }
     .nav-link ul{
         display: block;
